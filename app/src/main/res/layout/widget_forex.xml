@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/widget_root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@drawable/widget_background">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+  <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="FOREX SESSIONS" android:textColor="@color/widget_text" android:textSize="12sp" android:textStyle="bold" android:letterSpacing="0.12"/>
+  <TextClock android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="h:mm:ss a" android:format24Hour="HH:mm:ss" android:textColor="@color/widget_muted" android:textSize="11sp"/>
+ </LinearLayout>
+ <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center_vertical">
+  <TextView android:id="@+id/label_asia" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/widget_text" android:textSize="13sp" android:textStyle="bold"/>
+  <TextView android:id="@+id/status_asia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:textSize="10sp" android:textStyle="bold"/>
+  <Chronometer android:id="@+id/timer_asia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:countDown="true" android:format="%s" android:textColor="@color/widget_text" android:textSize="13sp" android:fontFamily="monospace"/>
+ </LinearLayout>
+ <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center_vertical">
+  <TextView android:id="@+id/label_london" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/widget_text" android:textSize="13sp" android:textStyle="bold"/>
+  <TextView android:id="@+id/status_london" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:textSize="10sp" android:textStyle="bold"/>
+  <Chronometer android:id="@+id/timer_london" android:layout_width="wrap_content" android:layout_height="wrap_content" android:countDown="true" android:format="%s" android:textColor="@color/widget_text" android:textSize="13sp" android:fontFamily="monospace"/>
+ </LinearLayout>
+ <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center_vertical">
+  <TextView android:id="@+id/label_new_york" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/widget_text" android:textSize="13sp" android:textStyle="bold"/>
+  <TextView android:id="@+id/status_new_york" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:textSize="10sp" android:textStyle="bold"/>
+  <Chronometer android:id="@+id/timer_new_york" android:layout_width="wrap_content" android:layout_height="wrap_content" android:countDown="true" android:format="%s" android:textColor="@color/widget_text" android:textSize="13sp" android:fontFamily="monospace"/>
+ </LinearLayout>
+ <TextView android:id="@+id/widget_footer" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="6dp" android:textColor="@color/widget_muted" android:textSize="10sp" android:maxLines="1"/>
+</LinearLayout>
